@@ -10,7 +10,7 @@ const AddEvent = () => {
     const { from } = location.state || { from: { pathname: "/" } };
 
     const onSubmit = data => {
-        fetch('https://volunteer-network-server-gr.herokuapp.com/addVolunteer', {
+        fetch('https://volunteer-network-server-one.herokuapp.com/addVolunteer', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

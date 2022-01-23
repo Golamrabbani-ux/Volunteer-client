@@ -14,7 +14,7 @@ const Home = () => {
 
 
     useEffect(()=>{
-        fetch(`https://volunteer-network-server-gr.herokuapp.com/search?title=${title.title}`)
+        fetch(`https://volunteer-network-server-one.herokuapp.com/search?title=${title.title}`)
         .then(res => res.json())
         .then(data => {
             setSearchData(data);

@@ -17,7 +17,7 @@ const AllVolunTerrs = () => {
     const handleColorIndex = ()=> index > 2 ? index = 0 : index = index + 1;
     
     useEffect(() =>{
-        fetch('https://volunteer-network-server-gr.herokuapp.com/allVolunteersData')
+        fetch('https://volunteer-network-server-one.herokuapp.com/allVolunteersData')
         .then(res => res.json())
         .then(volunteers => {
             setAllVolunTeers(volunteers);

@@ -9,7 +9,7 @@ const Admin = () => {
     const [allVolunTeerMembers, setAllVolunTeerMembers] = useState([]);
 
     useEffect(() => {
-        fetch('https://volunteer-network-server-gr.herokuapp.com/allVolunteersMembers')
+        fetch('https://volunteer-network-server-one.herokuapp.com/allVolunteersMembers')
         .then(res => res.json())
         .then(volunteerMembers => setAllVolunTeerMembers(volunteerMembers))
     },[])
